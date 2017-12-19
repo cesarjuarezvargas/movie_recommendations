@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <main>
+        <header class="search">
+            <!--<img id="back-button" data-src="./img/caret.svg" class="iconic iconic-md" data-direction="left" alt="Back Button" title="Back"/>-->
+            <img id="search-button" class="iconsearch" src="img/128656-simple-red-square-icon-business-magnifying-glass-ps.png" alt="Search" title="Search" />
+
+            <!--Magnifying glass icon attibution: http://icons.mysitemyway.com/legacy-icon/128656-simple-red-square-icon-business-magnifying-glass-ps/-->
+
+            <input type="text" id="search-input" placeholder="Type the movie title here!" />
+        </header>
+
+        <div class="page active" id="search-results">
+           
+            <section class="title"></section>
+            <p>Click on movie titles to get recommendations</p>
+            <section class="content"></section>
+            <div class="movie">
+                <img src="img/kodak_film_image1.gif" alt="poster" class="poster" />
+
+                <!--            Poster image attribution: http://www.historiccamera.com/cgi-bin/librarium/pm.cgi?action=display&login=kodak_film-->
+
+                <h2 class="movie-title">The Flicks App</h2>
+                <p class="movie-description">All about the magic of cinema! Search by titles and read synopsis of your favourite movies. Thank you for visiting and enjoy!</p>
+            </div>
+            <div class="attribution">
+                <img src="img/408x161-powered-by-rectangle-green.png" alt="Powered By The Movie DB" />
+            </div>
+        </div>
+
+        <div class="page" id="recommend-results">
+            <section class="recommendations_title"></section>
+            <p>Your Exclusive Top 20 Recommendations:</p>
+            <section class="content">
+                <!--               insert div with recommendation here -->
+            </section>
+            <div class="attribution">
+                <img src="img/408x161-powered-by-rectangle-green.png" alt="Powered By The Movie DB" />
+            </div>
+        </div>
+    </main>
+
+    <div class="loading not">
+        <img class="iconic" data-src="img/208x226-stacked-green.png" title="loop circular" />
+    </div>
+    <!--    //above: is an wait-while-fetching-results load icon//-->
+
+    <script src="./js/iconic.min.js"></script>
+    <!--    <script src="./js/key.js"></script>-->
+    <script src="./js/main.js"></script>
+    
+    
+</body>
+
+</html>
