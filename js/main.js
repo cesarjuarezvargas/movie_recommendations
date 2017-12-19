@@ -7,7 +7,7 @@ const KEY = "ae3a28351ad1752fe9c80c48e0cc3b49";
 //recommended --> baseurl + "movie/" + <movie_id> + "recommendations?api_key + <KEY> + "&language=en-US"
 
 let app = {
-    URL: 'http://api.themoviedb.org/3/',
+    URL: 'https://api.themoviedb.org/3/',
     imgURL: 'https://image.tmdb.org/t/p/w500/',
     init: function () {
         //focus on the text field
