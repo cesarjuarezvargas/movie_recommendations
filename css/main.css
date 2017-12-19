@@ -1,1 +1,187 @@
+/*
+***************************
+/ DEFAULTS
+*******************************
+*/
 
+* {
+    padding: 0 margin: 0 box-sizing: border-box;
+    background: grey;
+    
+}
+
+html {
+    font-size: 20px;
+    color: azure;
+    line-height: 1.5;
+    font-family: serif;
+}
+
+h2{
+    font-family: Vidaloka, 'Times New Roman', 'Book Antiqua', Palatino, serif;
+}
+p{
+    font-family: Exo, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding:0.5rem 0.5rem;
+    color: white;
+}
+
+/*
+***************************
+/ LAYOUTS
+*******************************
+*/
+
+.page {
+/*    display: none;*/
+    padding: 1rem;
+    margin-top: 3rem;
+/*    background: #40000D;*/
+    background: grey;
+    transform: translateX(-200%);
+    transition: transform 1s ease-in-out;
+    position: absolute;
+}
+
+.page.active {
+/*    display: block;*/
+    transform: translateY(0);
+    
+    
+}
+
+.not {
+    display: none;
+}
+
+.attribution {
+    padding: 1rem;
+    text-align: center;
+}
+
+.attribution img {
+    width: 30%;
+    /*
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 60s;
+*/
+}
+
+/*@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}*/
+
+
+/****************************
+/ SEARCH BAR
+*******************************/
+
+.search {
+    position: fixed;
+    height: 3rem;
+    z-index: 100;
+    /* Z-INDEX KEEPS THE SEARCH BAR FIXED*/
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 7px 7px #000;
+}
+
+input::placeholder {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    opacity: 0.25;
+}
+
+#search-button {
+    position: absolute;
+    z-index: 120;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+/*    background-color: #E50030;*/
+    background-color: gainsboro;
+    padding: 0.1rem;
+    cursor: pointer;
+}
+
+#search-input {
+    position: absolute;
+    z-index: 110;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    width: 100%;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    color: white;
+/*    background-color: #7F001B;*/
+    background-color: gray;
+}
+
+
+/****************************
+/ SEARCH RESULTS
+*******************************/
+
+.movie {
+    border: 1px solid rgb(0,212,116);
+    border-radius: 25px;
+    padding: 1rem;
+    overflow: auto;
+    clear: both;
+    margin-bottom: 0.5rem;
+    /*you can round the corners here too*/
+}
+
+.year{
+    padding-left: 10px;
+}
+.movie a{
+    cursor: pointer;
+}
+
+.movie a:hover{
+    color:rgb(0,212,116);
+}
+.poster {
+    float: left;
+    background-color: gray;
+    width: 150px;
+    height: auto;
+    min-height: 150px;
+    margin: 0 1rem 1rem 0;
+    box-shadow: 10px 10px 20px #000;
+}
+
+.movie-title {
+    font-size: 2rem;
+    
+}
+
+
+.movie-description {
+    font-size: 1rem;
+
+}
+
+
+/****************************
+/ RECOMMENDATIONS
+*******************************
+
+
+
+
+/****************************
+/ MISCELANEOUS
+*******************************
